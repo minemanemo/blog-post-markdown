@@ -1,0 +1,15 @@
+{
+  "name": "mine-markdown-tistory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "markdown-tistory write"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "markdown-tistory": "^0.1.7"
+  }
+}
