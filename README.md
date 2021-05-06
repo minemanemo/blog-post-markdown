@@ -56,3 +56,5 @@ markdown-tistory ad cod
 
 - AWS 네트워크 아키텍처 구성 및 구축
 - AWS 네트워크 IoC (Terraform)
+- JavaScript 문법 공부나 한번 새로하자!
+- Best Express App을 만들어보자!
