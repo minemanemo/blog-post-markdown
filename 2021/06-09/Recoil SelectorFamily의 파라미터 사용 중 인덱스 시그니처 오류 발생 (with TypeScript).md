@@ -26,9 +26,15 @@ export const listQuery = selectorFamily<Data[], Param>({
 
 # 🤨 에러 메세지
 
-> "인덱스 시그니처가 없습니다." 라는 에러 메세지 발생
-
 ![screensh](./img1.png)
+
+- "인덱스 시그니처가 없습니다." 라는 에러 메세지 발생
+
+```typescript
+type Primitive = undefined | null | boolean | number | symbol | string;
+```
+
+- Recoil의 타입 중 [Primitive](https://github.com/facebookexperimental/Recoil/blob/master/typescript/index.d.ts#L292)에 해당하는 단순한 파라미터는 상관 없지만 위의 예제의 `Param`과 같이 object 형식의 타입은 에러가 발생한다.
 
 # 🧐 원인
 
