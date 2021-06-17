@@ -128,10 +128,7 @@ git merge --no-ff develop
 - 이때 merge와 rebase는 그래프를 그릴때 일자로 만들지 세모/네모로 만들지 차이가 있습니다.
   - 둘중에 뭐가 좋다고 단정지을 수 없어요! 아래와같은 경우가 있거든요
   - merge 커밋이 너무 많아 지는 경우 그래프의 두깨가 넓어질때가 있어요
-    <details>
-      <summary>접기/펼치기!!</summary>
-      <div markdown="1">
-      예전 회사의 커밋이에요... 너무 두꺼워서 추적하기 어려울때가 있어요
+    <details><summary>접기/펼치기!!</summary><div markdown="1">예전 회사의 커밋이에요... 너무 두꺼워서 추적하기 어려울때가 있어요
       ![screensh](./img10.png)
       </div>
     </details>
