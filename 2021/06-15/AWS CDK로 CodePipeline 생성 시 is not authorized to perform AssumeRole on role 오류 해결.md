@@ -134,6 +134,8 @@ dc127-bde5-4f2f-8e49-f2356c299b78; Proxy: null)
 
 # 👾 해결 방법
 
+## 방법 1: Props 옵션 수정
+
 - 정말 간단하다... 문제가 된 이유는 앞서 말했던 `fromRoleArn` 함수의 `mutable` 속성을 false로 설정하여 문제가 되었다.
   - 이래서 CDK에서 IAM Role에 Policy를 추가할 수 없음.
 - 아래와 같이 `fromRoleArn` 함수의 `mutable` 속성을 제거해주면 된다. (default가 true 라서 지우기만 하면 된다.)
@@ -148,3 +150,20 @@ const role = iam.Role.fromRoleArn(this, "Role", CODEPIPELINE_ROLE_ARN);
 - Option들 좀 자세히 잘보자!!!
   - Example 코드를 보고 그대로 가져왔는데 mutable 속성에 대한 설명을 좀 대충 보았다...
   - 이거때문에 한 15분은 버린거 같다...
+
+## 방법 2: Role 수정
+
+- Role에 아래와 같은 정책을 추가합니다.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": "sts:AssumeRole",
+      "Resource": "*",
+      "Effect": "Allow"
+    }
+  ]
+}
+```
