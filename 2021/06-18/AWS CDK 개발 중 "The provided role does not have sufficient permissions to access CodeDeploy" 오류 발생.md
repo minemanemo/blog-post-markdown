@@ -149,15 +149,15 @@ export class PlatformPipelineStack extends cdk.Stack {
 
   - CodePipeline Action에 CodePipeline에서 쓰던 Role을 같이 추가해주니 해결 되었습니다.!
 
-  ```typescript
+```typescript
+// ...
+const deployToDevAction = new codepipeline_actions.CodeDeployServerDeployAction({
   // ...
-  const deployToDevAction = new codepipeline_actions.CodeDeployServerDeployAction({
+  deploymentGroup: codedeploy.ServerDeploymentGroup.fromServerDeploymentGroupAttributes(
+    this,
+    role: iam.Role.fromRoleArn(this, "Role", "ARN ID!!!");
     // ...
-    deploymentGroup: codedeploy.ServerDeploymentGroup.fromServerDeploymentGroupAttributes(
-      this,
-      role: iam.Role.fromRoleArn(this, "Role", "ARN ID!!!");
-      // ...
-    ),
-  });
-  // ...
-  ```
+  ),
+});
+// ...
+```
