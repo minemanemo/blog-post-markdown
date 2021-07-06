@@ -17,6 +17,7 @@
 ![screensh](./pink.gif)
 
 - 나는 박보검이 아니고 Pink 색 옷을 입지는 않지만 Pink 테마는 너무 예쁘다!!
+- 나... 핑크 좋아하나봐...
 - 한번 쯤 테마에 질릴때쯤 Slack의 White & Pink Theme는 어떤가...
 
 ![screensh](./pink-slack.png)
