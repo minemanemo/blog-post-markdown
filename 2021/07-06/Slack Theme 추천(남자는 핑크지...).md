@@ -1,6 +1,6 @@
 # 🌅 블랙 테마
 
-> 옷부터 컴퓨터 책상, 맥북안의 모든 테마를 Black 생상을 사용하는 중이다.
+> 옷부터 컴퓨터 책상, 맥북안의 모든 테마를 Black 색상을 사용하는 중이다.
 
 - 뭔가 Professional한 느낌을 주는 Black Theme
 - 나의 Mac은 Black Theme와 Red계열 그리고 Arsenal의 조합으로 이루어 져있다.
