@@ -20,10 +20,10 @@ interface Data {
 
 type Response = AxiosResponse<Data>;
 
-const getData = (): Promise<Response> => axios.get("example.com/data");
+const getData = (): Promise<Response> => axios.get('example.com/data');
 
 const asyncDataQuery = selector<Data>({
-  key: "asyncDataQuery",
+  key: 'asyncDataQuery',
   get: async () => {
     const response = await getData();
     return response.data;
@@ -46,7 +46,7 @@ API 호출 코드에서 위와 같이 파라미터가 필요없을 수 있지만
 
 ```typescript
 const getData = (id: number): Promise<Response> =>
-  axios.get("example.com/data", { params: { id } });
+  axios.get('example.com/data', { params: { id } });
 ```
 
 크게 두 가지 방법이 있습니다.
@@ -64,15 +64,15 @@ const getData = (id: number): Promise<Response> =>
 
 ```typescript
 const getData = (id: number): Promise<Response> =>
-  axios.get("example.com/data", { params: { id } });
+  axios.get('example.com/data', { params: { id } });
 
 const userIdState = atom<number>({
-  key: "userIdState",
+  key: 'userIdState',
   default: 0,
 });
 
 const asyncDataQuery = selector<Data>({
-  key: "asyncDataQuery",
+  key: 'asyncDataQuery',
   get: async ({ get }) => {
     const userId = get(userIdState);
     const response = await getData(userId);
@@ -115,10 +115,10 @@ const App = () => {
 
 ```typescript
 const getData = (id: number): Promise<Response> =>
-  axios.get("example.com/data", { params: { id } });
+  axios.get('example.com/data', { params: { id } });
 
 const asyncDataQuery = selectorFamily<Data, number>({
-  key: "asyncDataQuery",
+  key: 'asyncDataQuery',
   get:
     (userId: number) =>
     async ({ get }) => {
@@ -129,7 +129,7 @@ const asyncDataQuery = selectorFamily<Data, number>({
 
 const App = () => {
   const [userId, setUserId] = useState(0);
-  const data = useRecoilValue(asyncDataQuery);
+  const data = useRecoilValue(asyncDataQuery(userId));
 
   useEffect(() => {
     setUserId(1);
