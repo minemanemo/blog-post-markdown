@@ -124,6 +124,10 @@ Jetbrains은 IDE의 끝판왕 제품만 취급하기 때문에
 
 추후에 Web Storm 세팅 관련된 포스팅도 해보려고 한다.
 
+## 🍝 이외 찍먹
+
+Pycharm, Android Studio, sublimeText
+
 # 👾 정리
 
 시간이 많이 지났다.
