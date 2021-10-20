@@ -34,7 +34,7 @@
 ~~2011년 쯤 릴리즈 되었을테니 `Visual Studio 2012`과 `아이유의 너랑 나`의 나이는 같다.~~
 Visual Studio 2012는 12.08에 출시되었다;;
 
-> 🤔 기억나는 수업: 컴퓨터 언어/컴퓨터 언어 실습, 자료구조, 운영제제 등
+> 🤔 기억나는 수업: 컴퓨터 언어/컴퓨터 언어 실습, 자료구조, 운영체제 등
 
 ## 👦🏼 [Notepad++](https://notepad-plus-plus.org)
 
@@ -116,7 +116,7 @@ Jetbrains에서 만든 Web Storm이다.
 
 Jetbrains은 IDE의 끝판왕 제품만 취급하기 때문에
 
-(바교적 최근에 Eclipse를 사용하다가 Jetbrains의 IntelliJ로 넘어간 Java 개발자 형이 있다)
+(비교적 최근에 Eclipse를 사용하다가 Jetbrains의 IntelliJ로 넘어간 Java 개발자 형이 있다)
 
 항상 사용은 해보고 싶었지만 무료도 아닌거에 너무 익숙해져버리면 어쩌지라는 마음에 사용안했지만
 
